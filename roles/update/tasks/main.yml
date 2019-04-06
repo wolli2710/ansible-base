@@ -1,0 +1,13 @@
+- name: Start configuration
+  become: true
+  state: present
+  yum:
+    - vim
+    - git
+- name: Copy logrotatefiles
+- template:
+    src: /templates/oida
+    dest: /etc/logrotate.d/oida
+    owner: root
+    group: root
+    mode: 0644

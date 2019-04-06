@@ -1,0 +1,10 @@
+all:
+  hosts:
+    mail.example.com:
+  children:
+    master-nodes:
+      hosts:
+        9x.1xx.110.1x:
+    slave-nodes:
+      hosts:
+        mydomain.com:

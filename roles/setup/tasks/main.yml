@@ -1,0 +1,6 @@
+- name: Install basic tools
+  become: true
+  state: present
+  yum:
+    - vim
+    - git
